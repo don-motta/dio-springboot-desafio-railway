@@ -13,9 +13,9 @@ public class Account {
     private String numberAccount;
     private String agency;
 
-    @Column(scale= 13, precision= 2) //scale= 13 define o número máximo de dígitos à direita do ponto decimal e precision= 2 define o número máximo de dígitos à esquerda do ponto decimal.
+    @Column(precision= 13, scale= 2) //scale= 13 define o número máximo de dígitos à direita do ponto decimal e precision= 2 define o número máximo de dígitos à esquerda do ponto decimal.
     private BigDecimal balance;
-    @Column(name = "account_limit",scale= 13, precision= 2)
+    @Column(name = "account_limit",precision= 13, scale= 2)
     private BigDecimal limit;
 
     public Long getId() {
